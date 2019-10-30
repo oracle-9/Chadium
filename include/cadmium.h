@@ -11,13 +11,13 @@ uintmax_t _cadmium_failed_tests = 0;
 FILE* _cadmium_out_file = NULL;
 
 #define CADMIUM_RAN_TESTS \
-    (0 + _cadmium_ran_tests)  // prevent outside assignment
+    ((uintmax_t)_cadmium_ran_tests)  // prevent outside reassignment
 
 #define CADMIUM_PASSED_TESTS \
-    (0 + _cadmium_passed_tests)  // prevent outside assignment
+    ((uintmax_t)_cadmium_passed_tests)  // prevent outside reassignment
 
 #define CADMIUM_FAILED_TESTS \
-    (0 + _cadmium_failed_tests)  // prevent outside assignment
+    ((uintmax_t)_cadmium_failed_tests)  // prevent outside reassignment
 
 #define CADMIUM_SET_OUT_FILE(out_file_ptr)    \
     do {                                      \
