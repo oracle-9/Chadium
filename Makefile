@@ -1,6 +1,5 @@
 install:
-	cp include/cadmium.h /usr/include
+	cp include/chadmium.h /usr/include
 
 uninstall:
-	rm -f /usr/include/cadmium.h
-
+	rm -f /usr/include/chadmium.h
