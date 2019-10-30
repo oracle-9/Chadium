@@ -11,13 +11,13 @@ uintmax_t _chadium_failed_tests = 0;
 FILE* _chadium_out_file = NULL;
 
 #define CHADIUM_RAN_TESTS \
-    ((uintmax_t)_chadium_ran_tests)  // prevent outside reassignment
+    ((uintmax_t)_chadium_ran_tests)  // prevent outside re-assignment
 
 #define CHADIUM_PASSED_TESTS \
-    ((uintmax_t)_chadium_passed_tests)  // prevent outside reassignment
+    ((uintmax_t)_chadium_passed_tests)  // prevent outside re-assignment
 
 #define CHADIUM_FAILED_TESTS \
-    ((uintmax_t)_chadium_failed_tests)  // prevent outside reassignment
+    ((uintmax_t)_chadium_failed_tests)  // prevent outside re-assignment
 
 #define CHADIUM_SET_OUT_FILE(out_file_ptr)               \
     do {                                                 \
