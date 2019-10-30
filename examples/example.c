@@ -1,4 +1,4 @@
-#include "chadmium.h"
+#include "chadium.h"
 
 #include <inttypes.h>
 #include <stdlib.h>
@@ -20,7 +20,7 @@ static void test_bad_fib_13(void) {
     uint64_t const incorrect_fib_13 = bad_fib(13);
     uint64_t const correct_fib_13 = 233;
 
-    CHADMIUM_RUN_TEST_W_MSG(
+    CHADIUM_RUN_TEST_W_MSG(
         correct_fib_13 == incorrect_fib_13,
         "Incorrect fibonacci value.\n"
         "Expected value: %" PRIu64 "\n"
@@ -31,15 +31,15 @@ static void test_bad_fib_13(void) {
 }
 
 int main(void) {
-    CHADMIUM_SET_OUT_FILE(stdout);
+    CHADIUM_SET_OUT_FILE(stdout);
 
-    CHADMIUM_RUN_TEST(1 + 1 == 2);
+    CHADIUM_RUN_TEST(1 + 1 == 2);
 
     test_bad_fib_13();
 
-    CHADMIUM_PRINT_TEST_RESULTS();
+    CHADIUM_PRINT_TEST_RESULTS();
 
-    if (CHADMIUM_FAILED_TESTS) {
+    if (CHADIUM_FAILED_TESTS) {
         return EXIT_FAILURE;
     }
 }
