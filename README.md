@@ -17,7 +17,7 @@ Cadmium consists of 7 macros:
 - `CADMIUM_RUN_TEST_W_MSG` is the same as `CADMIUM_RUN_TEST`, but takes an additional amount of printf-like arguments, which will be printed if the expression is false;
 - `CADMIUM_PRINT_TEST_RESULTS()` prints the total amount of ran tests, passed tests and failed tests executed up until this point.
 
-There is an example file in the directory `examples` illustrating the usage of these macros. The following block displays its output.
+There is an [example file](https://github.com/Oracle-UM/Cadmium/blob/master/examples/example.c) in the directory `examples` illustrating the usage of these macros. The following block displays its output.
 ```
 >>> ./example.out
 Incorrect fibonacci value.
